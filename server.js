@@ -10,9 +10,30 @@ const PORT = 3000;
 // JSON parse all incoming requests
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.status(200).send('Hello World');
-});
+// Is this required?  Research to find out if so and why!
+// app.use(express.urlencoded({ extended: true }));
+
+// app.use(express.static('./src/index.html'));
+// app.use(express.static('./src/styles.css'));
+
+// app.get('/', (req, res) => {
+//     res.status(200).send('Hello World');
+// });
+
+app.use(express.static(path.join(__dirname, './src/')
+));
+
+// What is the difference between join and resolve here?  Which do I use?
+// app.use(express.static(path.resolve(__dirname, 'src')));
+
+
+// respond with main app
+app.get('/', (req, res) => (
+  res.status(200).sendFile(path.resolve(__dirname, '../src/index.html'))
+));
+
+// make a get request to the API
+// app.get('/')
 
 // Global error handling 
 app.use((err, req, res, next) => {
@@ -30,3 +51,5 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
     console.log(`Server listening on PORT ${PORT}`);
 }); // http://localhost:3000/
+
+module.exports = app;

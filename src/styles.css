@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Ubuntu Light', 'Century Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3d3d3d;
+    background-color: rgb(211, 163, 255);
+}
+
+p {
+    font-family: 'Ubuntu Light', 'Century Gothic', sans-serif;
+}
+
+hr {
+    border:5px solid rgb(66, 0, 128)
+}
