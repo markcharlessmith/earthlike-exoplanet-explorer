@@ -11,7 +11,7 @@ const PORT = 3000;
 app.use(express.json());
 
 // Is this required?  Research to find out if so and why!
-// app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 // app.use(express.static('./src/index.html'));
 // app.use(express.static('./src/styles.css'));
@@ -34,6 +34,9 @@ app.get('/', (req, res) => (
 
 // make a get request to the API
 // app.get('/')
+
+// Handle a 404 
+app.use((req, res) => res.status(404).send('This is not the page you\'re looking for...'));
 
 // Global error handling 
 app.use((err, req, res, next) => {
