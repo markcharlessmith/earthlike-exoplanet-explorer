@@ -1,12 +1,12 @@
 import React from 'react';
 // const React = require('react');
-import CUTIES from "../src/CUTIES.png";
+import Dashboard from ''
 
 
 function App() {
     return (
     <div className='App'>
-
+      <Dashboard/>  
     </div>
     )
 }
