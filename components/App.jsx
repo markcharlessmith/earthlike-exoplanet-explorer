@@ -1,13 +1,22 @@
-// import React, { Component } from 'react';
-const React = require('react');
+import React from 'react';
+// const React = require('react');
+import CUTIES from "../src/CUTIES.png";
 
 
-class App extends React.Component {
-    render() {
+function App() {
     return (
-        <h1>Hello Mark</h1>
-    );
-    }
-}
+    <div className='App'>
 
-module.exports = App;
+    </div>
+    )
+}
+// class App extends React.Component {
+//     render() {
+//     return (
+//         <h1>Hello Mark<img src={CUTIES}/></h1>
+
+//     );
+//     }
+// }
+
+export default App;
