@@ -9,7 +9,6 @@ const PORT = 3000;
 // JSON parse all incoming requests
 app.use(express.json());
 
-// Is this required?  Research to find out if so and why!
 app.use(express.urlencoded({ extended: true }));
 
 // app.use(express.static('./src/index.html'));

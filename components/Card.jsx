@@ -7,18 +7,6 @@ const Card = ({
       planet, parentstartype, relativeearthmass, lightyearsfromearth 
     } = info;
   
-    // const Data = films.map((film, i) => (
-    //   <li key={i} className="charFilm">
-    //     - {film.title} <span className="icon"><FAIcon icon={faQuestionCircle} size="xs" style={{color: 'steelBlue'}} onClick={e => openDetailsModal(e, 'film', film.id)} /></span>
-    //   </li>
-    // ));
-  
-    // const openDetailsModal = (e, type, id) => {
-    //   const top = e.pageY;
-    //   const left = e.pageX;
-    //   openModal(type, { top, left }, id);
-    // };
-  
     return (
       <article className="card planetCard">
         <div className="planetHeadContainer">

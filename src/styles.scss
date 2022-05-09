@@ -19,3 +19,17 @@ img {
     width: 200px;
     height: 200px;
 }
+
+.App {
+  background-color: cornflowerblue;
+  margin: 1rem;  
+}
+
+.Card {
+    text-align: left;
+    padding-left: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgb(211, 163, 255);
+    box-shadow: 5px 5px 5px 1px white;
+}
